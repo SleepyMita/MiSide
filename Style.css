@@ -185,6 +185,11 @@ table {
   background-color: #ffffff50;
 }
 
+.hyperlinkc {
+  color: #fff;
+  font-style: italic;
+}
+
 /*people i like*/
 
 .contributor {
