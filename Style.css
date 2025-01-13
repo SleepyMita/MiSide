@@ -298,16 +298,16 @@ table {
 
  /*img hover*/
  .cp img:hover {
-  width: auto;
-  height: 300px;
+  transform: scale(3.0);
+  margin: 100px;
  }
 
  .profilep img:hover {
-  width: auto;
-  height: 300px;
+  transform: scale(3.0);
+  margin: 100px;
  }
 
  .cartridgep img:hover {
-  width: auto;
-  height: 300px;
+  transform: scale(3.0);
+  margin: 100px;
  }
