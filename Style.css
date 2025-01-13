@@ -1,0 +1,308 @@
+/*-------------------------*/
+/*Main*/
+/*-------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image:url('Sleep.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  min-height: 100vh;
+  user-select: none;
+}
+
+
+/*-------------------------*/
+/*Menu*/
+/*-------------------------*/
+
+.side-bar {
+  background: linear-gradient(45deg, rgba(76, 0, 130, 1), rgba(0, 0, 255, 0.500));
+  width: 250px;
+  height: calc(100vh -32px);
+  left: -260px;
+  margin: 10px;
+  position: fixed;
+  top: 0;
+  overflow-y: auto;
+  transition: 0.6s ease;
+  transition-property: left;
+  border-radius: 16px;
+  text-indent: 0 !important;
+}
+
+
+header {
+background: #ffffff;
+
+}
+
+header img {
+  width: 100px;
+  margin: 15px;
+  margin-left: 70px;
+  border-radius: 50%;
+  border: 5px solid rgba(76, 0, 130, 0.500);
+}
+
+
+.close-btn {
+  position: absolute;
+  color: #990099;
+  font-size: 23px;
+  right: 0px;
+  margin: 15px;
+  cursor: pointer;
+  text-indent: 0 !important;
+}
+
+header h1 {
+  text-align: center;
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: 25px;
+  padding-bottom: 13px;
+  font-family: sans-serif;
+  color: #990099;
+}
+
+header button {
+  color: #990099;
+  background: white
+}
+
+.menu {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 16px;
+}
+
+.menu .item {
+position: relative;
+cursor: pointer;
+}
+
+.menu .item a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 40px;
+}
+
+.item i {
+  margin-right: 15px;
+}
+
+.item a .dropdown {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+
+.item .sub-menu {
+  background: #99009975;
+  display: none;
+  border: 1px;
+}
+
+.menu-btn {
+  position: absolute;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(76, 0, 130, 1), rgba(0, 0, 255, 0.500));
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 35px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.side-bar.active {
+  left: 0;
+}
+
+.item .sub-menu {
+  text-align: center;
+  padding-left: -10px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+/*-------------------------*/
+/*Table*/
+/*-------------------------*/
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  background: #0000ff20;
+}
+
+.icenter {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  background: none;
+}
+
+.scenter {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  background: none;
+}
+
+.change {
+  background: #ffffff;
+}
+
+table {
+  color: rgb(255, 255, 255);     
+  text-shadow: -1px -1px 0px indigo, 1px 1px 0px indigo, 1px -1px 0px indigo, -1px 1px 0px indigo;  
+  margin-top: 10px;
+  text-align: center;
+  font-style: monospace;                                       
+}
+
+/*mmmg964*/
+
+.item .sub-menu a:hover {
+  background-color: #ffffff50;
+}
+.menu .item a:hover {
+  background-color: #ffffff50;
+}
+
+/*people i like*/
+
+.contributor {
+ background: url('Sleep2.png');
+ background-position-y: -10px;
+ background-size: cover;
+ height: 425px;
+ width: 390px;
+ padding: 10px;
+ margin: 10px;
+ border-radius: 16px;
+ position: fixed;
+ right: 0;
+}
+
+.contributor h2 {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: -1px -1px 0px indigo, 1px 1px 0px indigo, 1px -1px 0px indigo, -1px 1px 0px indigo;  
+}
+
+.contributor h3 {
+  text-align: left;
+  margin-left: 50px;
+  color: #ffffff;
+  text-shadow: -1px -1px 0px indigo, 1px 1px 0px indigo, 1px -1px 0px indigo, -1px 1px 0px indigo;  
+}
+
+/*Text1*/
+
+.text1 {
+  background: linear-gradient(45deg, rgba(76, 0, 130, 0.500), rgba(0, 0, 255, 0.100));
+  height: 200px;
+  width: 850px;
+  padding: 10px;
+  margin-left: 75px;
+  margin-top: 10px;
+  border-radius: 16px;
+  position: fixed;
+  left: 10px;
+ }
+ .text1 h2 {  text-align: center;
+  color: #ffffff;
+  text-shadow: -1px -1px 0px indigo, 1px 1px 0px indigo, 1px -1px 0px indigo, -1px 1px 0px indigo;  
+}
+
+ .text2 {
+  text-indent: -9999;
+  background: linear-gradient(45deg, rgba(76, 0, 130, 0.500), rgba(0, 0, 255, 0.100));
+  height: 200px;
+  width: 850px;
+  padding: 10px;
+  margin-left: 75px;
+  margin-top: 225px;
+  border-radius: 16px;
+  position: fixed;
+  left: 10px;
+ }
+
+ .text2 h2 {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: -1px -1px 0px indigo, 1px 1px 0px indigo, 1px -1px 0px indigo, -1px 1px 0px indigo;  
+ }
+
+ .text2 a {
+  color: white;
+ }
+
+ .idkanymore {
+  text-indent: -9999;
+  background: linear-gradient(45deg, rgba(76, 0, 130, 0.500), rgba(0, 0, 255, 0.100));
+  height: auto;
+  width: 1260px;
+  padding: 10px;
+  margin-left: 75px;
+  margin-top: 450px;
+  border-radius: 16px;
+  position: fixed;
+  left: 10px;
+ }
+
+ .idkanymore h2 {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: -1px -1px 0px indigo, 1px 1px 0px indigo, 1px -1px 0px indigo, -1px 1px 0px indigo;  
+ }
+
+/*images*/
+
+ .cp img {
+  width: auto;
+  height: 100px;
+ }
+
+ .profilep img {
+  width: auto;
+  height: 100px;
+ }
+
+ .cartridgep img {
+  width: auto;
+  height: 100px;
+ }
+
+
+ /*img hover*/
+ .cp img:hover {
+  width: auto;
+  height: 300px;
+ }
+
+ .profilep img:hover {
+  width: auto;
+  height: 300px;
+ }
+
+ .cartridgep img:hover {
+  width: auto;
+  height: 300px;
+ }

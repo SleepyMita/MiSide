@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Dreamer Mita</title>
+  <link rel="icon" href="Sleepy.ico" />
+  <link rel="stylesheet" href="Style.css"" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!--im too cute, i want to be sleepy mita-->
+</head>
+<body>
+    <!--menu button-->
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+ <div class="side-bar">
+   <!--header section-->
+   <header>
+    <!--close button-->
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <!--image-->
+    <img src="pfp.png" alt="">
+    <!--name-->
+    <h1><audio id="music" loop src="ijustwanttosleep.mp3"></audio>
+      <button onclick="let music = document.getElementById('music'); music.paused ? music.play() : music.pause()">Dreamer Mita</button></h1>
+   </header>
+
+   <!--Menu items-->
+   <div class="menu">
+    <div class="item"><a href="Home.html" class="sub-btn"><i class="fas fa-desktop"></i><b>Home</b>
+   </a></div></div>
+
+   <div class="menu">
+    <div class="item"><a class="sub-btn"><i class="fas fa-table"></i><b>Information</b>
+    <!--dropdown 02-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+    </a>
+    <div class="sub-menu">
+      <a href="Mita.html" class="sub-item">Mita</a>
+      <a href="Player.html" class="sub-item">Player</a>
+    </div>
+  </div>
+
+    <div class="item"><a class="sub-btn"><i class="fas fa-th"></i><b>Guide</b>
+    <!--dropdown 02-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+  </a>
+  <div class="sub-menu">
+    <a href="Achievement.html" class="sub-item">Achievement</a>
+    <a href="Profile.html" class="sub-item">Mita Profile</a>
+    <a href="Cartridge.html" class="sub-item">Player Cartridge</a>
+    <a href="Carrot.html" class="sub-item">Glitching Carrot</a>
+  </div>
+</div>
+
+    <div class="item"><a class="sub-btn"><i class="fas fa-info-circle"></i><b>Creator</b>
+    <!--dropdown 03-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+  </a>
+  <div class="sub-menu">
+    <a class="sub-item"><b>Discord:</b>mitaistoosleepy</a>
+    <a href="https://www.facebook.com/mmmg964" class="sub-item"><b>Facebook</b></a>
+    <a href="https://steamcommunity.com/id/mmmg964/" class="sub-item"><b>Steam</b></a> 
+  </div>
+</div>
+   </div>
+ </div>
+ <!--Java Query Linking-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    //jquery expand and collapse
+    $('.menu-btn').click(function(){
+      $('.side-bar').addClass('active');
+      $('.menu-btn').css("visibility", "hidden");
+    });
+    //close button
+  $('.close-btn').click(function(){
+    $('.side-bar').removeClass('active');
+    $('.menu-btn').css("visibility", "visible");
+   });
+   //sub menu toggle
+   $('.sub-btn').click(function(){
+    $(this).next('.sub-menu').slideToggle();
+    $(this).find('.dropdown').toggleClass('rotate');
+   });
+  })
+</script>
+<!--mmmg964-->
+
+  <table border="1" width="80%" class="center">
+    <tr>
+      <th>#</th>
+      <th>Achievement</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Obtain Requirements</th>
+      <th>Level</th>
+    </tr>
+    <tr>
+      <td><img src="A/Fly.png"></td>
+      <td>The Fly's Victory</td>
+      <td>Minigame</td>
+      <td>Croak-Croak</td>
+      <td>Activate the fly minigame (don't move for 2 minutes) and collect 25 coins</td>
+      <td>Any Chapter</td>
+    </tr>
+    <tr>
+      <td><img src="A/Juice.png"></td>
+      <td>Dead Juice</td>
+      <td>Missable</td>
+      <td>Made from the juice from the ad.</td>
+      <td>Turn on the TV and drink the juice that Mita offers you.</td>
+      <td>Together at Last</td>
+    </tr>
+    <tr>
+      <td><img src="A/Lovesauce.png"></td>
+      <td>Delicious Love</td>
+      <td>Missable</td>
+      <td>What flour tastes like?</td>
+      <td>Eat the special sauce Mita provides.</td>
+      <td>Together at Last</td>
+    </tr>
+    <tr>
+      <td><img src="A/Clabber.png"></td>
+      <td>Clabber</td>
+      <td>Minigame</td>
+      <td>Beaten and sour.</td>
+      <td>Beat Mita 4 times out of 4 in the "Dairy Scandal" game on the console.</td>
+      <td>Things Get Weird</td>
+    </tr>
+    <tr>
+      <td><img src="A/Penguin.png"></td>
+      <td>Penguin Conundrum!</td>
+      <td>Minigame</td>
+      <td>Have a snowball!</td>
+      <td>win two rounds of "Penguin Piles" against Mita. (Also unlocks Winter Clothes.)</td>
+      <td>Things Get Weird</td>
+    </tr>
+    <tr>
+      <td><img src="A/Blind.png"></td>
+      <td>Creak in the Dark</td>
+      <td>Story</td>
+      <td>So very dark...</td>
+      <td>Refuse to stay with Mita.</td>
+      <td>Things Get Weird</td>
+    </tr>
+    <tr>
+      <td><img src="A/Happy.png"></td>
+      <td>Conditions Met</td>
+      <td>Ending</td>
+      <td>Can I stay with you?</td>
+      <td>Agree to stay with Mita.</td>
+      <td>Things Get Weird</td>
+    </tr>
+    <tr>
+      <td><img src="A/Boss.png"></td>
+      <td>Accelerate!</td>
+      <td>Minigame</td>
+      <td>Vroom-vroom!</td>
+      <td>Beat the SPACECAR minigame.</td>
+      <td>Beyond the World</td>
+    </tr>
+    <tr>
+      <td><img src="A/Racing.png"></td>
+      <td>Going at Maximum Speed!</td>
+      <td>Minigame</td>
+      <td>Vrooooooooooooooom!</td>
+      <td>Beat the SPACECAR minigame while collecting all coins.</td>
+      <td>Beyond the World</td>
+    </tr>
+    <tr>
+      <td><img src="A/Pat.png"></td>
+      <td>Pat on the head!</td>
+      <td>Minigame</td>
+      <td>Hey, you're messing up my hair!</td>
+      <td>Beat Cappie 3 out of 3 times on the Button minigame.</td>
+      <td>Cappie</td>
+    </tr>
+    <tr>
+      <td><img src="A/Dance.png"></td>
+      <td>The Great Dance</td>
+      <td>Minigame</td>
+      <td>Left, right, center!</td>
+      <td>Beat any of the 3 songs in the DDR minigame with Cappie.</td>
+      <td>Cappie</td>
+    </tr>
+    <tr>
+      <td><img src="A/GreatMita.png"></td>
+      <td>O, Great Mita!</td>
+      <td>Secret</td>
+      <td>Remember us.</td>
+      <td>Find the secret room and type on the keyboard. It will automatically type "Praying for you; O great Mita".</td>
+      <td>Dummies and Forgotten Puzzles</td>
+    </tr>
+    <tr>
+      <td><img src="A/RipChibi.png"></td>
+      <td>You shall not pass!</td>
+      <td>Secret</td>
+      <td>Repair the fence.</td>
+      <td>Follow the Chibi Mita that comes out of the train.</td>
+      <td>Dummies and Forgotten Puzzles</td>
+    </tr>
+    <tr>
+      <td><img src="A/Win.png"></td>
+      <td>Helluvah Win!</td>
+      <td>Minigame</td>
+      <td>I'm not here.</td>
+      <td>Beat Hetoor.</td>
+      <td>Dummies and Forgotten Puzzles</td>
+    </tr>
+    <tr>
+      <td><img src="A/NoDMG.png"></td>
+      <td>Without Taking Damage?</td>
+      <td>Minigame</td>
+      <td>As accurate as can be.</td>
+      <td>Beat Hetoor without taking damage.</td>
+      <td>Dummies and Forgotten Puzzles</td>
+    </tr>
+    <tr>
+      <td><img src="A/Mitsuketa.png"></td>
+      <td>Found you!</td>
+      <td>Secret</td>
+      <td>OK, I'm looking right at you!</td>
+      <td>Look at the Mita Figure above Mila's desk.<i>(Can Only Be Seen After Fixing 3 Of The Glitches)</i></td>
+      <td>Reading Books, Destroying Glitches</td>
+    </tr>
+    <tr>
+      <td><img src="A/Carrot.png"></td>
+      <td>Carrot</td>
+      <td>Secret</td>
+      <td>Don't look at me!</td>
+      <td>Collect All <a href="Carrot.html" class="hyperlinkc">Carrot's</a></td>
+      <td>Reading Books, Destroying Glitches</td>
+    </tr>
+    <tr>
+      <td><img src="A/Door.png"></td>
+      <td>Some Achievement?</td>
+      <td>Secret</td>
+      <td>And some description?</td>
+      <td>Interact with the door with missing assets.</td>
+      <td>Old Version</td>
+    </tr>
+    <tr>
+      <td><img src="A/Phase1.png"></td>
+      <td>Phase 1 Logs</td>
+      <td>Minigame</td>
+      <td>Undiscovered error.</td>
+      <td>After escaping Creepy Mita, Beat Quandrangle in the core. <i>(Advance Function)</i></td>
+      <td>Old Version</td>
+    </tr>
+    <tr>
+      <td><img src="A/Apple.png"></td>
+      <td>A Long Long Tail</td>
+      <td>Minigame</td>
+      <td>Apple, again?</td>
+      <td>Eat 25 apples in the snake game. <i>(Day 999, Open Snake Game Instead Of "Hello!")</i></td>
+      <td>The Real World</td>
+    </tr>
+    <tr>
+      <td><img src="A/Phase2.png"></td>
+      <td>Phase 2 Logs</td>
+      <td>Minigame</td>
+      <td>Error Fixed.</td>
+      <td>Beat Quandrangle in the core. <i>(Advance Functions)</i></td>
+      <td>Reboot</td>
+    </tr>
+    <tr>
+      <td><img src="A/Safe.png"></td>
+      <td>Safe of life</td>
+      <td>Ending</td>
+      <td>Keep safe and sound.</td>
+      <td>In any chapter where you can access the safe, enter the code (always 4970). <i>(Except The Moment You Already Rebooted Crazy Mita)</i></td>
+      <td>The Basement/Reboot</td>
+    </tr>
+    <tr>
+      <td><img src="A/End.png"></td>
+      <td>Is This the end?</td>
+      <td>Ending</td>
+      <td>Of course it's the end!</td>
+      <td>Get the True Ending by leaving through the front door.</td>
+      <td>Leave The Core!</td>
+    </tr>
+    <tr>
+      <td><img src="A/Player.png"></td>
+      <td>Caught Them All</td>
+      <td>Collectible</td>
+      <td>Now who's next?</td>
+      <td>Collect every <a href="Cartridge.html" class="hyperlinkc">Player Cartridge</a></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><img src="A/Mita.png"></td>
+      <td>Hi, Mita</td>
+      <td>Collectible</td>
+      <td>They're all unique.</td>
+      <td>Collect every <a href="Profile.html" class="hyperlinkc">Mita Profile</a></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><img src="A/SleepyMitaIsTooCute.png"></td>
+      <td>Pro Gamer</td>
+      <td>Secret</td>
+      <td>Checked just about everywhere.</td>
+      <td>Get every achievement.</td>
+      <td>N/A</td>
+    </tr>
+</table><br><br><br><br><br>
+</div>
+</body>
+</html>

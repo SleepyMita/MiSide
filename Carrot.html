@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Dreamer Mita</title>
+  <link rel="icon" href="Sleepy.ico" />
+  <link rel="stylesheet" href="Style.css"" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!--im too cute, i want to be sleepy mita-->
+</head>
+<body>
+    <!--menu button-->
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+ <div class="side-bar">
+   <!--header section-->
+   <header>
+    <!--close button-->
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <!--image-->
+    <img src="pfp.png" alt="">
+    <!--name-->
+    <h1><audio id="music" loop src="ijustwanttosleep.mp3"></audio>
+      <button onclick="let music = document.getElementById('music'); music.paused ? music.play() : music.pause()">Dreamer Mita</button></h1>
+   </header>
+   
+   <!--Menu items-->
+   <div class="menu">
+    <div class="item"><a href="Home.html" class="sub-btn"><i class="fas fa-desktop"></i><b>Home</b>
+   </a></div></div>
+
+   <div class="menu">
+    <div class="item"><a class="sub-btn"><i class="fas fa-table"></i><b>Information</b>
+    <!--dropdown 02-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+    </a>
+    <div class="sub-menu">
+      <a href="Mita.html" class="sub-item">Mita</a>
+      <a href="Player.html" class="sub-item">Player</a>
+    </div>
+  </div>
+
+    <div class="item"><a class="sub-btn"><i class="fas fa-th"></i><b>Guide</b>
+    <!--dropdown 02-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+  </a>
+  <div class="sub-menu">
+    <a href="Achievement.html" class="sub-item">Achievement</a>
+    <a href="Profile.html" class="sub-item">Mita Profile</a>
+    <a href="Cartridge.html" class="sub-item">Player Cartridge</a>
+    <a href="Carrot.html" class="sub-item">Glitching Carrot</a>
+  </div>
+</div>
+    <div class="item"><a class="sub-btn"><i class="fas fa-info-circle"></i><b>Creator</b>
+    <!--dropdown 03-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+  </a>
+  <div class="sub-menu">
+    <a class="sub-item"><b>Discord:</b>mitaistoosleepy</a>
+    <a href="https://www.facebook.com/mmmg964" class="sub-item"><b>Facebook</b></a>
+    <a href="https://steamcommunity.com/id/mmmg964/" class="sub-item"><b>Steam</b></a> 
+  </div>
+</div>
+   </div>
+ </div>
+ <!--Java Query Linking-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    //jquery expand and collapse
+    $('.menu-btn').click(function(){
+      $('.side-bar').addClass('active');
+      $('.menu-btn').css("visibility", "hidden");
+    });
+    //close button
+  $('.close-btn').click(function(){
+    $('.side-bar').removeClass('active');
+    $('.menu-btn').css("visibility", "visible");
+   });
+   //sub menu toggle
+   $('.sub-btn').click(function(){
+    $(this).next('.sub-menu').slideToggle();
+    $(this).find('.dropdown').toggleClass('rotate');
+   });
+  })
+</script>
+<!--mmmg964-->
+<div class="cp">
+  <table border="1" width="80%" class="center">
+     <tr>
+      <th>Glitching Carrot</th>
+      <th>Location</th>
+     </tr>
+     <tr>
+      <td>Carrot #1<br>
+        <img src="C/1.png">
+      </td>
+      <td>Start by heading to the kitchen. The first Glitching Carrot can be found in the fruit bowl on the kitchen counter.</td>
+     </tr>
+     <tr>
+      <td>Carrot #2<br>
+        <img src="C/2.png"></td>
+      <td>After the first Carrot disappears, make your way to Mila’s bedroom. It is located near the potted plant beside the bathroom door.</td>
+     </tr>
+     <tr>
+      <td>Carrot #3<br>
+        <img src="C/3.png"></td>
+      <td>Next, traverse through the living room towards the front door and check the vase situated on the table next to it.</td>
+     </tr>
+     <tr>
+      <td>Carrot #4<br>
+        <img src="C/4.png"></td>
+      <td>To unearth the fourth Carrot, resolve two glitches. After tackling the first glitch in the kitchen, enter the bathroom. Following Mila’s reprimand, exit and re-enter to address the second glitch. Before you do, glance at the top shelf in the closet adjacent to the bathroom door for a hidden Player Cartridge, and then collect the Carrot after solving the bathroom glitch.</td>
+     </tr>
+     <tr>
+      <td>Carrot #5<br>
+        <img src="C/5.png"></td>
+      <td>Once you’ve collected Carrot #4, head to the living room where you will find the next Carrot resting on the armchair beside the bedroom door.</td>
+     </tr>
+     <tr>
+      <td>Carrot #6<br>
+        <img src="C/6.png"></td>
+      <td>Return to the kitchen, where the sixth Carrot will be located on the kitchen table.</td>
+     </tr>
+     <tr>
+      <td>Carrot #7<br>
+        <img src="C/7.png"></td>
+      <td>The final Glitching Carrot is positioned on Mila’s bed in her bedroom.</td>
+     </tr>
+</table><br><br><br><br><br></div>
+</div>
+</body>
+</html>

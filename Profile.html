@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Dreamer Mita</title>
+  <link rel="icon" href="Sleepy.ico" />
+  <link rel="stylesheet" href="Style.css"" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!--im too cute, i want to be sleepy mita-->
+</head>
+<body>
+    <!--menu button-->
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+ <div class="side-bar">
+   <!--header section-->
+   <header>
+    <!--close button-->
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <!--image-->
+    <img src="pfp.png" alt="">
+    <!--name-->
+    <h1><audio id="music" loop src="ijustwanttosleep.mp3"></audio>
+      <button onclick="let music = document.getElementById('music'); music.paused ? music.play() : music.pause()">Dreamer Mita</button></h1>
+   </header>
+
+   <!--Menu items-->
+   <div class="menu">
+    <div class="item"><a href="Home.html" class="sub-btn"><i class="fas fa-desktop"></i><b>Home</b>
+   </a></div></div>
+
+   <div class="menu">
+    <div class="item"><a class="sub-btn"><i class="fas fa-table"></i><b>Information</b>
+    <!--dropdown 02-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+    </a>
+    <div class="sub-menu">
+      <a href="Mita.html" class="sub-item">Mita</a>
+      <a href="Player.html" class="sub-item">Player</a>
+    </div>
+  </div>
+
+    <div class="item"><a class="sub-btn"><i class="fas fa-th"></i><b>Guide</b>
+    <!--dropdown 02-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+  </a>
+  <div class="sub-menu">
+    <a href="Achievement.html" class="sub-item">Achievement</a>
+    <a href="Profile.html" class="sub-item">Mita Profile</a>
+    <a href="Cartridge.html" class="sub-item">Player Cartridge</a>
+    <a href="Carrot.html" class="sub-item">Glitching Carrot</a>
+  </div>
+</div>
+
+    <div class="item"><a class="sub-btn"><i class="fas fa-info-circle"></i><b>Creator</b>
+    <!--dropdown 03-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+  </a>
+  <div class="sub-menu">
+    <a class="sub-item"><b>Discord:</b>mitaistoosleepy</a>
+    <a href="https://www.facebook.com/mmmg964" class="sub-item"><b>Facebook</b></a>
+    <a href="https://steamcommunity.com/id/mmmg964/" class="sub-item"><b>Steam</b></a> 
+  </div>
+</div>
+   </div>
+ </div>
+ <!--Java Query Linking-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    //jquery expand and collapse
+    $('.menu-btn').click(function(){
+      $('.side-bar').addClass('active');
+      $('.menu-btn').css("visibility", "hidden");
+    });
+    //close button
+  $('.close-btn').click(function(){
+    $('.side-bar').removeClass('active');
+    $('.menu-btn').css("visibility", "visible");
+   });
+   //sub menu toggle
+   $('.sub-btn').click(function(){
+    $(this).next('.sub-menu').slideToggle();
+    $(this).find('.dropdown').toggleClass('rotate');
+   });
+  })
+</script>
+<!--mmmg964-->
+
+<div class="profilep">
+  <table border="1" width="80%" class="center">
+    <tr>
+      <th>Mita's Profile's</th>
+      <th>Level</th>
+      <th>Location</th>
+    </tr>
+    <tr>
+      <td>Mita</td>
+      <td>N/A</td>
+      <td>Obtainable By The Moment You Enter The Virtual World</td>
+    </tr>
+    <tr>
+      <td>(Mita)Crazy Mita</td>
+      <td>N/A</td>
+      <td>Obtainable By Finishing The Main Story Upon Her Revealing Her True Form</td>
+    </tr>
+    <tr>
+      <td>Short Haired Mita<br>
+        <img src="M/ShortHaired.png"></td>
+      <td>Mini Mita</td>
+      <td>After Going To The Version 1.15 And Getting Bitten By The Dummy On The Bedroom, You Can See The Nearby Table Beside The Door, The Cartridge Is Beside The Mirror On Top Of that Table</td>
+    </tr>
+    <tr>
+      <td>Kind Mita<br>
+        <img src="M/Kind.png"></td>
+      <td>Reboot</td>
+      <td>After Meeta Die's, You Will Meet Her Again In Bedroom you Will See A Cartridge On Her Desk Beside Her</td>
+    </tr>    
+    <tr>
+      <td>Cool Mita<br>
+        <img src="M/Cappie.png"></td>
+      <td>Beyond The World</td>
+      <td>You Can Find Her Cartridge On The Kitchen, On Top Of The Television In The Corner Of the Room.</td>
+    </tr>    
+    <tr>
+      <td>Tiny Mita<br>
+        <img src="M/Tiny.png"></td>
+      <td>The Loop</td>
+      <td>When Tiny Mita Stands Up From The Chair You Can See A Cartridge Beside her On Top Of The Drawer</td>
+    </tr>    
+    <tr>
+      <td>Sleepy Mita<br>
+        <img src="M/Dreamer.png"></td>
+      <td>She Just Wants To Sleep</td>
+      <td>You Can Find Her Cartridge On The Shelf Of The Bathroom</td>
+    </tr>    
+    <tr>
+      <td>2D Mita<br>
+        <img src="M/2D.png"></td>
+      <td>Novels</td>
+      <td>The Moment You Have The Option To Go To Kitchen, Press It, You Can Find A Cartridge On Top Of The Desk Near The Window On The Left Side Of Your Screen</td>
+    </tr>    
+    <tr>
+      <td>Mila<br>
+        <img src="M/Mila.png"></td> 
+      <td>Reading Books, Destroying Glitches</td>
+      <td>After You're Free To Move Head To The Living Room, You Will See A Cartridge On Top Of The Coffee Table Infront Of the Television</td>
+    </tr>    
+    <tr>
+      <td>Creepy Mita<br>
+        <img src="M/Creepy.png"></td>
+      <td>Old Version</td>
+      <td>Go Anywhere Until You See Creepy Mita Takes You Back To The Kitchen, Ignore Her Head And Go To The Counter Where The Fruit Bowl Is, her Cartridge Is There</td>
+    </tr>    
+    <tr>
+      <td>Core Mita<br>
+        <img src="M/Core.png"></td>
+      <td>Reboot</td>
+      <td>After Using The Computer On the Core Room Use The Option "Advance Functions" Then "Get Flash Drive" Option</td>
+    </tr>    
+    <tr>
+      <td>Chibi Mita<br>
+        <img src="M/Chibi.png"></td>
+      <td>Mini Mita</td>
+      <td>Head To The Stool On The Left Side Theres A Cartridge On Top Of It</td>
+    </tr>
+    <tr>
+      <td>Ghostly Mita<br>
+        <img src="M/Emotional.png"></td>
+      <td>Dummies And Forgotten Puzzles</td>
+      <td>After Arriving On Ghostly Mita's Room, Look At The Right You'll See A Cartridge On The Shelf Above The Air Vent</td>
+    </tr>
+     <tr>
+      <td>Prototype Mita<br>
+        <img src="M/Prototype.png"></td>
+      <td>Dummies And Forgotten Puzzles</td>
+      <td>When You Were In The Sewer Area, After Going To The Light, One Of The Frozen Dummy Is Holding A Cartridge On the Left Side Of The Ladder</td>
+    </tr>
+</table><br><br><br><br><br></div>
+</div>
+</body>
+</html>

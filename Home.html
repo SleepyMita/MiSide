@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Dreamer Mita</title>
+  <link rel="icon" href="Sleepy.ico" />
+  <link rel="stylesheet" href="Style.css"" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!--im too cute, i want to be sleepy mita-->
+</head>
+<body>
+ <!--Java Query Linking-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    //jquery expand and collapse
+    $('.menu-btn').click(function(){
+      $('.side-bar').addClass('active');
+      $('.menu-btn').css("visibility", "hidden");
+    });
+    //close button
+  $('.close-btn').click(function(){
+    $('.side-bar').removeClass('active');
+    $('.menu-btn').css("visibility", "visible");
+   });
+   //sub menu toggle
+   $('.sub-btn').click(function(){
+    $(this).next('.sub-menu').slideToggle();
+    $(this).find('.dropdown').toggleClass('rotate');
+   });
+  })
+</script>
+<!--mmmg964-->
+
+<style>
+  h1 {
+    text-align: center;
+    text-shadow: -1px -1px 0px indigo, 1px 1px 0px indigo, 1px -1px 0px indigo, -1px 1px 0px indigo;  
+
+  }
+</style>
+
+<!--People I Like-->
+<div class="contributor">
+<h2>
+People Who Helped me
+</h2>
+<br>
+<h3>
+  <ul>
+  <li>YoRHa Type A No.1</li>
+  <li>9.8</li>
+  <li>Fiozs</li>
+  <li>Deelon</li>
+  <li>Cat Nugget</li>
+  <li>Kuruo_</li>
+  <li>Quin~</li>
+  <li>Evil ZonE</li>
+  </ul>
+</h3>
+</div>
+
+<!--Text1-->
+
+<div class="text1">
+<h2>
+ <i class="fas fa-angle-left">---</i>The Menu Is Right here If You Cant See, Is This Site Getting <br>
+ A Bit Overload? I Really Dont Know Either, What Should I Add?<br>
+ If You Have Any Idea Tell It to Me At Discord!
+</h2>
+</div>
+
+<!--Text 2-->
+
+<div class="text2">
+<h2>
+I Created This Site, Because I Have Nothing To Do In My Cafe<br>
+Other Than Be With My Colleague's, i Also Want A Rest<br>
+So Why Not Create This Site? Im A Busy Person, A Very busy One<br>
+Why Not Have A <a href="https://laughtale.official.ec/">Drink?</a>
+</h2>
+</div>
+
+<!--Descripion-->
+
+<div class="idkanymore">
+  <h2>
+This Website Purpose Is Guiding Players Of MiSide, About How To Get Achievements, Cartridges Location
+Profile Locations, Carrot Locations, And Even Includes The Information About Mita Profile's and Player Cartridge's
+  </h2>
+</div>
+
+
+
+
+
+
+    <!--menu button-->
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+ <div class="side-bar">
+   <!--header section-->
+   <header>
+    <!--close button-->
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <!--image-->
+    <img src="pfp.png" alt="">
+    <!--name-->
+    <h1><audio id="music" loop src="ijustwanttosleep.mp3"></audio>
+      <button onclick="let music = document.getElementById('music'); music.paused ? music.play() : music.pause()">Dreamer Mita</button></h1>
+   </header>
+
+   <!--Menu items-->
+   <div class="menu">
+    <div class="item"><a href="Home.html" class="sub-btn"><i class="fas fa-desktop"></i><b>Home</b>
+   </a></div></div>
+
+   <div class="menu">
+    <div class="item"><a class="sub-btn"><i class="fas fa-table"></i><b>Information</b>
+    <!--dropdown 02-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+    </a>
+    <div class="sub-menu">
+      <a href="Mita.html" class="sub-item">Mita</a>
+      <a href="Player.html" class="sub-item">Player</a>
+    </div>
+  </div>
+
+    <div class="item"><a class="sub-btn"><i class="fas fa-th"></i><b>Guide</b>
+    <!--dropdown 02-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+  </a>
+  <div class="sub-menu">
+    <a href="Achievement.html" class="sub-item">Achievement</a>
+    <a href="Profile.html" class="sub-item">Mita Profile</a>
+    <a href="Cartridge.html" class="sub-item">Player Cartridge</a>
+    <a href="Carrot.html" class="sub-item">Glitching Carrot</a>
+  </div>
+</div>
+
+    <div class="item"><a class="sub-btn"><i class="fas fa-info-circle"></i><b>Creator</b>
+    <!--dropdown 03-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+  </a>
+  <div class="sub-menu">
+    <a class="sub-item"><b>Discord:</b>mitaistoosleepy</a>
+    <a href="https://www.facebook.com/mmmg964" class="sub-item"><b>Facebook</b></a>
+    <a href="https://steamcommunity.com/id/mmmg964/" class="sub-item"><b>Steam</b></a> 
+  </div>
+</div>
+   </div>
+ </div>
+</body>
+</html>

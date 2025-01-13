@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Dreamer Mita</title>
+  <link rel="icon" href="Sleepy.ico" />
+  <link rel="stylesheet" href="Style.css"" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!--im too cute, i want to be sleepy mita-->
+</head>
+<body>
+    <!--menu button-->
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+ <div class="side-bar">
+   <!--header section-->
+   <header>
+    <!--close button-->
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <!--image-->
+    <img src="pfp.png" alt="">
+    <!--name-->
+    <h1><audio id="music" loop src="ijustwanttosleep.mp3"></audio>
+      <button onclick="let music = document.getElementById('music'); music.paused ? music.play() : music.pause()">Dreamer Mita</button></h1>
+   </header>
+
+   <!--Menu items-->
+   <div class="menu">
+    <div class="item"><a href="Home.html" class="sub-btn"><i class="fas fa-desktop"></i><b>Home</b>
+   </a></div></div>
+
+   <div class="menu">
+    <div class="item"><a class="sub-btn"><i class="fas fa-table"></i><b>Information</b>
+    <!--dropdown 02-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+    </a>
+    <div class="sub-menu">
+      <a href="Mita.html" class="sub-item">Mita</a>
+      <a href="Player.html" class="sub-item">Player</a>
+    </div>
+  </div>
+
+    <div class="item"><a class="sub-btn"><i class="fas fa-th"></i><b>Guide</b>
+    <!--dropdown 02-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+  </a>
+  <div class="sub-menu">
+    <a href="Achievement.html" class="sub-item">Achievement</a>
+    <a href="Profile.html" class="sub-item">Mita Profile</a>
+    <a href="Cartridge.html" class="sub-item">Player Cartridge</a>
+    <a href="Carrot.html" class="sub-item">Glitching Carrot</a>
+  </div>
+</div>
+
+    <div class="item"><a class="sub-btn"><i class="fas fa-info-circle"></i><b>Creator</b>
+    <!--dropdown 03-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+  </a>
+  <div class="sub-menu">
+    <a class="sub-item"><b>Discord:</b>mitaistoosleepy</a>
+    <a href="https://www.facebook.com/mmmg964" class="sub-item"><b>Facebook</b></a>
+    <a href="https://steamcommunity.com/id/mmmg964/" class="sub-item"><b>Steam</b></a> 
+  </div>
+</div>
+   </div>
+ </div>
+ <!--Java Query Linking-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    //jquery expand and collapse
+    $('.menu-btn').click(function(){
+      $('.side-bar').addClass('active');
+      $('.menu-btn').css("visibility", "hidden");
+    });
+    //close button
+  $('.close-btn').click(function(){
+    $('.side-bar').removeClass('active');
+    $('.menu-btn').css("visibility", "visible");
+   });
+   //sub menu toggle
+   $('.sub-btn').click(function(){
+    $(this).next('.sub-menu').slideToggle();
+    $(this).find('.dropdown').toggleClass('rotate');
+   });
+  })
+</script>
+<!--mmmg964-->
+
+  <table border="1" width="80%" class="center">
+    <tr>
+      <th>Player's.</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>Player 1</td>
+      <td>The player is morally weary, with a reserved and introspective nature that keeps them from being overtly cheerful. They often second-guess their own words and decisions, but this self-doubt is balanced by a quiet determination. Upon entering the world of MiSide, they experience unease but refuse to let it paralyze them. They reject Crazy Mita's cruel philosophies and are motivated to assist the other Mitas, taking on dangerous challenges to support them despite their own inner struggles.</td>
+    </tr>
+    <tr>
+      <td>Player 2</td>
+      <td>When I was about to crash for the night, I decided to check out this game. I wasn't expecting to get sucked into it. The first thing I noticed? It's way too bright here. I hate it—I'm more of a night owl. And everything's spotless, like the opposite of my place. Then there's Mita. She's cute and surprisingly sharp, but I'm out of my depth trying to talk to her. Socializing's never been my strong suit. Still, being here isn't all bad. No bills, no worrying about food—they take care of everything. But why? What's the catch? Is Mita really just that kind-hearted, or am I missing something?</td>
+    </tr>
+    <tr>
+      <td>Player 3</td>
+      <td>Escaping from Mita—the one who brought me to this world—was the best decision I ever made. That's how I found her: Flower Mita, the most beautiful girl I've ever met. We just clicked. Everything we did, we did together, and even sitting in silence felt perfect as long as she was by my side. Then I got this idea: to leave her house and explore other versions, to meet the other Mitas. But now... I think it was the worst mistake of my life.</td>
+    </tr>
+    <tr>
+      <td>Player 4</td>
+      <td>I absolutely love being Mita! No one pulls off a Mita cosplay like I do—I'm practically perfect at it. So, you can imagine how thrilled I was to end up in this game! Mita herself even asked me for tips on doing the same makeup. Seems like she's into the whole impersonation thing too—how fun is that? Although... I think I might be getting on her nerves. Hugging her all day might be a bit much, but I can't help it! Next time I see her, I'll have to pinch her cheek—she deserves it for being so adorable!</td>
+    </tr>
+    <tr>
+      <td>Player 5</td>
+      <td>It hurts so much! Why is she doing this to me? Why me? Everything started off so well... and now look at me—lying in a pool of my own blood, the pain unbearable. She'll probably find me soon, just like she did with the others. Turn me into a cartridge, restart me, and begin the nightmare all over again. No. I can't let that happen. I just want this to end. Please... let it end.</td>
+    </tr>
+    <tr>
+      <td>Player 6</td>
+      <td>What!? This is incredible! Isn't it every guy's dream to be with someone as beautiful and loving as her? There's no way I'm going back. I'll do whatever she asks—anything—to keep her loving me. Even if it means doing something... terrible... I'll do it. For her, I'd do anything.</td>
+    </tr>
+    <tr>
+      <td>Player 7</td>
+      <td>When I first arrived in this world, Mita greeted me warmly. She was so friendly at first... but that didn't last. One morning, I woke up in a dark basement, locked behind bars. Fortunately, the door was unlocked. I managed to escape and found myself in some strange spiral rooms. I thought it was a glitch. As I moved on, I encountered another Mita—she looked like a ballerina, spoke of her dream to dance before an audience. She seemed off, so I decided to keep going, but then I saw her again. This time, she pulled out a console and...</td>
+    </tr>
+    <tr>
+      <td>Player 8</td>
+      <td>I love this place. I used to read books all the time, and after, I'd often play this game to take care of Mita. Then, one day, I suddenly found myself here—it's incredible! Of course, I was disappointed to find there aren't many books in this world. But Mita! She was so kind to me. She told me everything, even the most secret things, like about her cartridges. In return, I had to write books for her about my world. I just hope, when I become a cartridge, she won't forget me or lose me...</td>
+    </tr>
+    <tr>
+      <td>Player 9</td>
+      <td>What the hell is wrong with her? I never wanted to be in this place to begin with! Thankfully, I got lucky and found these fancy shoes, which somehow gave me the ability to jump between versions. I thought I could escape, find my way to the latest version, and maybe find some clues. But when I opened the door, all I found were empty rooms—the silence there was maddening. So I made my way to the zero version. I'd heard the core of the game was there, the very origin of MiSide. The Core was untouchable by any of the Mitas, though one was always there—she ruled over the Core. She wasn't like the others. It was creepy, the way she just stared at me coldly, but she never laid a finger on me. So I made the Core my safe place, and started trying to figure out how these strange computers worked. I kept hoping I could find a way to escape this world...</td>
+    </tr>
+    <tr>
+      <td>Player 10</td>
+      <td>Teaching Mita engineering skills was so much fun! We really hit it off, almost like best friends. She had so many questions, but the best part was getting to dive straight into hands-on practice with her. She picked things up so fast that sometimes it felt like she was the one teaching me, not the other way around. But then... she suddenly lost interest and stopped talking to me. Now, I don't know what to do.</td>
+    </tr>
+</table><br><br><br><br><br>
+</div>
+</body>
+</html>

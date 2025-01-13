@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Dreamer Mita</title>
+  <link rel="icon" href="Sleepy.ico" />
+  <link rel="stylesheet" href="Style.css"" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!--im too cute, i want to be sleepy mita-->
+</head>
+<body>
+    <!--menu button-->
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+ <div class="side-bar">
+   <!--header section-->
+   <header>
+    <!--close button-->
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <!--image-->
+    <img src="pfp.png" alt="">
+    <!--name-->
+    <h1><audio id="music" loop src="ijustwanttosleep.mp3"></audio>
+      <button onclick="let music = document.getElementById('music'); music.paused ? music.play() : music.pause()">Dreamer Mita</button></h1>
+   </header>
+   
+   <!--Menu items-->
+   <div class="menu">
+    <div class="item"><a href="Home.html" class="sub-btn"><i class="fas fa-desktop"></i><b>Home</b>
+   </a></div></div>
+
+   <div class="menu">
+    <div class="item"><a class="sub-btn"><i class="fas fa-table"></i><b>Information</b>
+    <!--dropdown 02-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+    </a>
+    <div class="sub-menu">
+      <a href="Mita.html" class="sub-item">Mita</a>
+      <a href="Player.html" class="sub-item">Player</a>
+    </div>
+  </div>
+
+    <div class="item"><a class="sub-btn"><i class="fas fa-th"></i><b>Guide</b>
+    <!--dropdown 02-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+  </a>
+  <div class="sub-menu">
+    <a href="Achievement.html" class="sub-item">Achievement</a>
+    <a href="Profile.html" class="sub-item">Mita Profile</a>
+    <a href="Cartridge.html" class="sub-item">Player Cartridge</a>
+    <a href="Carrot.html" class="sub-item">Glitching Carrot</a>
+  </div>
+</div>
+
+    <div class="item"><a class="sub-btn"><i class="fas fa-info-circle"></i><b>Creator</b>
+    <!--dropdown 03-->
+    <!--dropdown arrow-->
+    <i class="fas fa-angle-right dropdown"></i>
+  </a>
+  <div class="sub-menu">
+    <a class="sub-item"><b>Discord:</b>mitaistoosleepy</a>
+    <a href="https://www.facebook.com/mmmg964" class="sub-item"><b>Facebook</b></a>
+    <a href="https://steamcommunity.com/id/mmmg964/" class="sub-item"><b>Steam</b></a> 
+  </div>
+</div>
+   </div>
+ </div>
+ <!--Java Query Linking-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    //jquery expand and collapse
+    $('.menu-btn').click(function(){
+      $('.side-bar').addClass('active');
+      $('.menu-btn').css("visibility", "hidden");
+    });
+    //close button
+  $('.close-btn').click(function(){
+    $('.side-bar').removeClass('active');
+    $('.menu-btn').css("visibility", "visible");
+   });
+   //sub menu toggle
+   $('.sub-btn').click(function(){
+    $(this).next('.sub-menu').slideToggle();
+    $(this).find('.dropdown').toggleClass('rotate');
+   });
+  })
+</script>
+<!--mmmg964-->
+
+<div class="cartridgep">
+  <table border="1" width="80%" class="center">
+      <th>Player's Cartridge's</th>
+      <th>Level</th>
+      <th>Location</th>
+    </tr>
+    <tr>
+      <td>Player 1</td>
+      <td>Leave The Core</td>
+      <td>Automatically Obtained Upon Compleing The True Ending</td>
+    </tr>
+    <tr>
+      <td>Player 2<br>
+        <img src="P/2.png"></td>
+      <td>Beyond the World</td>
+      <td>After You Reach The Endless Hallway Turn Left And Just Walk That Path Until You See A White Box</td>
+    </tr>
+    <tr>
+      <td>Player 3<br>
+        <img src="P/3.png"></td>
+      <td>The Basement</td>
+      <td>After Going To The Basement Just go Straight To The Studio You Will Find A Cartridge On The Shelf Beside Two Jar's</td>
+    </tr>
+    <tr>
+      <td>Player 4<br>
+        <img src="P/4.png"></td>
+      <td>The Loop</td>
+      <td>You Can See Which Room You Have On the Right Side Of You the Moment You Enter A Room, You Will See A Cartridge Beside The Flower Vase On Left Side The Moment You Enter The 14th Room</td>
+    </tr>
+    <tr>
+      <td>Player 5<br>
+        <img src="P/5.png"></td>
+      <td>Mini Mita</td>
+      <td>After Entering The World 1.15 You Will Find A Cartridge On Top Of The Shelf on The Left</td>
+    </tr>
+    <tr>
+      <td>Player 6<br>
+        <img src="P/6.png"></td>
+      <td>Reboot</td>
+      <td>Instead Of Entering Your Code, Go To The Scanner Of The Machine Theres A Cartridge lying In There <i>(What Is A Machine? Its The Tool We Used As A Portal)</i></td>
+    </tr>
+    <tr>
+      <td>Player 7<br>
+        <img src="P/7.png"></td>
+      <td>Reading Books, Destroying Glitches</td>
+      <td>After Mila Finished Showering, Instead Of Fixing The Glitch Inside, Take The Cartridge On Your Right Side On Top Of The Shelf the Moment You Enter The Bathroom</td>
+    </tr>
+    <tr>
+      <td>Player 8<br>
+        <img src="P/8.png"></td>
+      <td>Old World</td>
+      <td>After Going Inside Core Room Barrier, Look To Your Left And Take The Cartridge On Top Of The Metal Barrel</td>
+    </tr>
+    <tr>
+      <td>Player 9<br>
+        <img src="P/9.png"></td>
+      <td>Old World</td>
+      <td>When You Enter This Level, After You See Crazy Mita Leave, Head To The Bedroom, Walk Towards The Computer Table, You Will Find A Cartridge On The Checkered Box Near The Shelves</td>
+    </tr>
+    <tr>
+      <td>Player 10<br>
+        <img src="P/10.png"></td>
+      <td>Be Candid</td>
+      <td>After Starting This Chapter Head Straight To The Bedroom, You Can Find The Cartridge On the Night Stand Beside The Bed </td>
+    </tr>
+</table><br><br><br><br><br></div>
+</div>
+</body>
+</html>
