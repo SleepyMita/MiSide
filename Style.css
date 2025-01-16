@@ -190,14 +190,20 @@ table {
   font-style: italic;
 }
 
+.mygift {
+  color: #ffffff;
+  font-style: monospace;
+  text-decoration: none;
+}
+
 /*people i like*/
 
 .contributor {
  background: url('Sleep2.png');
  background-position-y: -10px;
  background-size: cover;
- height: 425px;
- width: 390px;
+ height: 65%;
+ width: 28.5%;
  padding: 10px;
  margin: 10px;
  border-radius: 16px;
@@ -222,11 +228,11 @@ table {
 
 .text1 {
   background: linear-gradient(45deg, rgba(76, 0, 130, 0.500), rgba(0, 0, 255, 0.100));
-  height: 200px;
-  width: 850px;
+  height: auto;
+  width: 62.5%;
   padding: 10px;
   margin-left: 75px;
-  margin-top: 10px;
+  transform: translate(0, 5%);
   border-radius: 16px;
   position: fixed;
   left: 10px;
@@ -239,11 +245,11 @@ table {
  .text2 {
   text-indent: -9999;
   background: linear-gradient(45deg, rgba(76, 0, 130, 0.500), rgba(0, 0, 255, 0.100));
-  height: 200px;
-  width: 850px;
+  height: auto;
+  width: 62.5%;
   padding: 10px;
   margin-left: 75px;
-  margin-top: 225px;
+  transform: translate(0, 120%);
   border-radius: 16px;
   position: fixed;
   left: 10px;
@@ -263,10 +269,10 @@ table {
   text-indent: -9999;
   background: linear-gradient(45deg, rgba(76, 0, 130, 0.500), rgba(0, 0, 255, 0.100));
   height: auto;
-  width: 1260px;
+  width: 92.5%;
   padding: 10px;
   margin-left: 75px;
-  margin-top: 450px;
+  transform: translate(0, 330%);
   border-radius: 16px;
   position: fixed;
   left: 10px;
@@ -311,11 +317,3 @@ table {
   transform: scale(3.0);
   margin: 100px;
  }
-
-/*Stalker No Place For You*/
-.mygift {
-  color: #ffffff;
-  font-style: monospace;
-  text-decoration: none;
-}
-/*Consider Yourself A Cheater*/
