@@ -20,7 +20,10 @@ body {
   user-select: none;
 }
 
-
+.contain {
+  width: 1340px;
+  height: auto;
+}
 /*-------------------------*/
 /*Menu*/
 /*-------------------------*/
@@ -190,25 +193,19 @@ table {
   font-style: italic;
 }
 
-.mygift {
-  color: #ffffff;
-  font-style: monospace;
-  text-decoration: none;
-}
-
 /*people i like*/
 
 .contributor {
  background: url('Sleep2.png');
  background-position-y: -10px;
  background-size: cover;
- height: 65%;
- width: 28.5%;
+ height: 425px;
+ width: 390px;
  padding: 10px;
  margin: 10px;
  border-radius: 16px;
  position: fixed;
- right: 0;
+ margin-left: 950px;
 }
 
 .contributor h2 {
@@ -228,11 +225,11 @@ table {
 
 .text1 {
   background: linear-gradient(45deg, rgba(76, 0, 130, 0.500), rgba(0, 0, 255, 0.100));
-  height: auto;
-  width: 62.5%;
+  height: 200px;
+  width: 850px;
   padding: 10px;
   margin-left: 75px;
-  transform: translate(0, 5%);
+  margin-top: 10px;
   border-radius: 16px;
   position: fixed;
   left: 10px;
@@ -245,11 +242,11 @@ table {
  .text2 {
   text-indent: -9999;
   background: linear-gradient(45deg, rgba(76, 0, 130, 0.500), rgba(0, 0, 255, 0.100));
-  height: auto;
-  width: 62.5%;
+  height: 200px;
+  width: 850px;
   padding: 10px;
   margin-left: 75px;
-  transform: translate(0, 120%);
+  margin-top: 225px;
   border-radius: 16px;
   position: fixed;
   left: 10px;
@@ -269,10 +266,10 @@ table {
   text-indent: -9999;
   background: linear-gradient(45deg, rgba(76, 0, 130, 0.500), rgba(0, 0, 255, 0.100));
   height: auto;
-  width: 92.5%;
+  width: 1260px;
   padding: 10px;
   margin-left: 75px;
-  transform: translate(0, 330%);
+  margin-top: 450px;
   border-radius: 16px;
   position: fixed;
   left: 10px;
@@ -317,3 +314,11 @@ table {
   transform: scale(3.0);
   margin: 100px;
  }
+
+/*Stalker No Place For You*/
+.mygift {
+  color: #ffffff;
+  font-style: monospace;
+  text-decoration: none;
+}
+/*Consider Yourself A Cheater*/
